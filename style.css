@@ -1,0 +1,38 @@
+form{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    margin-left: 21rem;
+    margin-bottom: 2rem;
+}
+.container{
+    display: block;
+    margin: 14rem auto;
+
+}
+.formField{
+    border: red;
+    margin-left: 21rem;
+    margin-top: 1rem;
+    margin-right: 0;
+}
+.buttons{
+    margin-left: 27.6rem;
+    margin-top: 1rem;
+    padding: 0;
+}
+.btn-primary{
+    width: 6rem
+}
+.btn-secondary{
+    margin-left: 3rem;
+    width: 6rem;
+}
+/* Fields */
+.nombre, .apellido, .matricula, .numeros{
+    padding: 0.3rem 15rem 0.2rem 0.5rem;
+    border: none;
+    filter: drop-shadow(0 0 0.20rem gray);
+    border-radius: 5px;
+}
