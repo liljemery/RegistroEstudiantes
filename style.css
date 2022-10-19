@@ -5,7 +5,7 @@ form{
 .header{
     margin-left: 21rem;
     margin-bottom: 2rem;
-    filter: drop-shadow(0 0 0.20rem gray)
+    filter: drop-shadow(0 0 0.05rem gray)
 }
 .container{
     display: block;
