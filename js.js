@@ -1,4 +1,6 @@
+//Funcion a ser ejecutada cuando se suba el formulario
 function validarForm() {
+  //Clase Constructora de estudiante.
     class Estudiante{
       constructor(nombre,apellido,matricula,nota){
           this.nombre = nombre;
@@ -32,11 +34,13 @@ function validarForm() {
       alert("La calificacion tiene que estar entre 0 y 100");
       return false;
     }
+    //En caso de dejar la seccion de notas vacia
     else if(nota == "")
     {
       alert("Necesita introducir una calificacion")
       return false;
     }
+      //Si el formulario es valido, crear instancia
     let estudiante1 = new Estudiante(nombre, apellido, matricula, nota)
     console.log(estudiante1);
   }
