@@ -33,7 +33,29 @@ form{
 /* Fields */
 .nombre, .apellido, .matricula, .numeros{
     padding: 0.3rem 15rem 0.2rem 0.5rem;
-    border: none;
     filter: drop-shadow(0 0 0.20rem gray);
+    border: none;
     border-radius: 5px;
+    transition: 1s;
+}
+/* Adding some style */
+.nombre:focus{
+    filter: drop-shadow(0 0 0.20rem gray);
+    transform: scale(1.02);
+    transition: 1s;
+}
+.apellido:focus{
+    filter: drop-shadow(0 0 0.20rem gray);
+    transform: scale(1.02);
+    transition: 1s;
+}
+.matricula:focus{
+    filter: drop-shadow(0 0 0.20rem gray);
+    transform: scale(1.02);
+    transition: 1s;
+}
+.numeros:focus{
+    filter: drop-shadow(0 0 0.20rem gray);
+    transform: scale(1.02);
+    transition: 1s;
 }
