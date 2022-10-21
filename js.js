@@ -46,7 +46,7 @@ function validarForm() {
       document.getElementById("nota").style.filter = "drop-shadow(0 0 0.20rem red)";
       return false;
     }
-    //En caso de dejar la seccion de notas vacia
+    //En caso de nombre y apellido contener carateres especiales.
     if (!isNameValid) {
       document.getElementById("nota").style.filter = "drop-shadow(0 0 0.20rem gray)";
       alert("El nombre no puede contener caracteres especiales");
