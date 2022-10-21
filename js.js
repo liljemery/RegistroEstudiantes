@@ -11,12 +11,14 @@ function validarForm() {
     }
     // Special character validation
     let regex = /^[A-Za-z ]+$/
+    let regexMat = /^\d{4}-\d{4}$/
     // 
     let nombre = document.forms["myForm"]["nombre"].value;
     let isNameValid = regex.test(document.forms["myForm"]["nombre"].value);
     let apellido = document.forms["myForm"]["apellido"].value;
     let isLnameValid = regex.test(document.forms["myForm"]["apellido"].value);
     let matricula = document.forms["myForm"]["matricula"].value;
+    let isMatValid = regexMat.test(document.forms["myForm"]["matricula"].value);
     let nota = document.forms["myForm"]["score"].value;
     //Validar formulario
     if (nombre == "") 
@@ -60,6 +62,12 @@ function validarForm() {
     return false;
     }
     document.getElementById("apellido").style.filter = "drop-shadow(0 0 0.20rem gray)";
+    if (!isMatValid) {
+    document.getElementById("matricula").style.filter = "drop-shadow(0 0 0.20rem red)";
+    alert("La matricula no cumple con el formato necesario");
+    return false;
+    }
+    document.getElementById("matricula").style.filter = "drop-shadow(0 0 0.20rem gray)";
     //Si el formulario es valido, crear instancia
     let estudiante1 = new Estudiante(nombre, apellido, matricula, nota)
     console.log(estudiante1);
