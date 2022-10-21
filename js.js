@@ -22,27 +22,32 @@ function validarForm() {
     if (nombre == "") 
     {
       alert("Tienes que ingresar un nombre");
+      document.getElementById("nombre").style.filter = "drop-shadow(0 0 0.20rem red)";
       return false;
     }
     else if (apellido == "") 
     {
       alert("Tienes que ingresar un apellido");
+      document.getElementById("apellido").style.filter = "drop-shadow(0 0 0.20rem red)";
       return false;
     }
     else if(matricula == "")
     {
-      alert("Necesita introducir una matricula")
+      alert("Necesita introducir una matricula");
+      document.getElementById("matricula").style.filter = "drop-shadow(0 0 0.20rem red)";
       return false;
     }
     else if (nota < 0 || nota > 100) 
     {
       alert("La calificacion tiene que estar entre 0 y 100");
+      document.getElementById("nota").style.filter = "drop-shadow(0 0 0.20rem red)";
       return false;
     }
     //En caso de dejar la seccion de notas vacia
     else if(nota == "")
     {
       alert("Necesita introducir una calificacion")
+      document.getElementById("nota").style.filter = "drop-shadow(0 0 0.20rem red)";
       return false;
     }      
     if (!isNameValid) {

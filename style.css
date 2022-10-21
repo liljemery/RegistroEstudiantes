@@ -31,7 +31,7 @@ form{
     width: 6rem;
 }
 /* Fields */
-.nombre, .apellido, .matricula, .numeros{
+#nombre, #apellido, #matricula, #nota{
     padding: 0.3rem 15rem 0.2rem 0.5rem;
     filter: drop-shadow(0 0 0.20rem gray);
     border: none;
@@ -39,22 +39,22 @@ form{
     transition: 1s;
 }
 /* Adding some style */
-.nombre:focus{
+#nombre:focus{
     filter: drop-shadow(0 0 0.20rem gray);
     transform: scale(1.02);
     transition: 1s;
 }
-.apellido:focus{
+#apellido:focus{
     filter: drop-shadow(0 0 0.20rem gray);
     transform: scale(1.02);
     transition: 1s;
 }
-.matricula:focus{
+#matricula:focus{
     filter: drop-shadow(0 0 0.20rem gray);
     transform: scale(1.02);
     transition: 1s;
 }
-.numeros:focus{
+#nota:focus{
     filter: drop-shadow(0 0 0.20rem gray);
     transform: scale(1.02);
     transition: 1s;
