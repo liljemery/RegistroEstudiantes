@@ -11,7 +11,7 @@ function validarForm() {
     }
     // Special character validation
     let regex = /^[A-Za-z ]+$/
-    let regexMat = /^\d{4}-\d{4}$/
+    let regexMat = /[0-9]{4}-[0-9]{4}/
     // 
     let nombre = document.forms["myForm"]["nombre"].value;
     let isNameValid = regex.test(document.forms["myForm"]["nombre"].value);
