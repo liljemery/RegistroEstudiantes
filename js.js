@@ -72,6 +72,3 @@ function validarForm() {
     let estudiante1 = new Estudiante(nombre, apellido, matricula, nota)
     console.log(estudiante1);
   }
-
-
-
