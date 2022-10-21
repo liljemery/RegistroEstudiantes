@@ -13,6 +13,7 @@ function validarForm() {
     let apellido = document.forms["myForm"]["apellido"].value;
     let matricula = document.forms["myForm"]["matricula"].value;
     let nota = document.forms["myForm"]["score"].value;
+    let regex = /^[A-Za-z ]+$/
     //Validar formulario
     if (nombre == "") 
     {
@@ -40,7 +41,17 @@ function validarForm() {
       alert("Necesita introducir una calificacion")
       return false;
     }
-      //Si el formulario es valido, crear instancia
+    let isNameValid = regex.test(document.forms["myForm"]["nombre"].value);      
+    if (!isNameValid) {
+      alert("El nombre no puede contener caracteres especiales");
+      return false;
+    }
+    let isLnameValid = regex.test(document.forms["myForm"]["apellido"].value);
+    if (!isLnameValid) {
+    alert("El apellido no puede contener caracteres especiales");
+    return false;
+    }
+    //Si el formulario es valido, crear instancia
     let estudiante1 = new Estudiante(nombre, apellido, matricula, nota)
     console.log(estudiante1);
   }
